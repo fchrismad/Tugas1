@@ -18,16 +18,24 @@
         android:textColor="@color/black"
         android:text="Honda PCX160" />
 
-        <fragment
-            android:id="@+id/fragment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="23dp"
-            android:name="com.example.tugas1.SimpleFragment"
-            tools:layout="@layout/fragment_simple"/>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="23dp"
+        tools:layout="@layout/fragment_simple" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/mybutton"
+        android:text="Lihat Kelebihan" />
 
 
 </RelativeLayout>
